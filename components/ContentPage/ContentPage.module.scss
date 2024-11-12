@@ -1,0 +1,13 @@
+@import '../../sass/colors';
+
+.content {
+    position: relative;
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: linear-gradient($color-white, $color-primary);
+}

@@ -1,0 +1,24 @@
+@import '../../sass/colors';
+
+.button {
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 1rem 2rem;
+
+    &--reverse {
+        background-color: transparent;
+        color: $color-primary;
+    }
+
+    &--outlined {
+        background-color: $color-primary-light-1;
+        color: $color-primary;
+        border: 0.1rem solid $color-primary;
+    }
+}

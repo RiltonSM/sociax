@@ -1,0 +1,17 @@
+@import '../../sass/colors';
+
+.formContainer {
+    position: absolute;
+    bottom: 0;
+
+    width: 57rem;
+    height: 75%;
+    padding: 3rem;
+    background-color: $color-white;
+
+    border-radius: 1rem;
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+
+    margin-top: -35%;
+}

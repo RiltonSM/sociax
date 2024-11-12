@@ -1,0 +1,21 @@
+@import '../../sass/colors';
+
+.container {
+    position: relative;
+    
+    em-emoji-picker {
+        max-height: 3rem;
+        z-index: 1;
+        position: absolute;
+        bottom: 3.2rem;
+    }
+
+    .button {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}

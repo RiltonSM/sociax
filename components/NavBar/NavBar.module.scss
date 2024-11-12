@@ -1,0 +1,18 @@
+@import "../../sass/colors";
+
+.navigation {
+    width: 47rem;
+    background-color: $color-black;
+    height: 100%;
+    padding: 4rem 3rem;
+
+    .logo {
+        margin-bottom: 3rem;
+    }
+
+    .navList {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

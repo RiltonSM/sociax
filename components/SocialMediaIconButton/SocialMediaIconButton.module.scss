@@ -1,0 +1,25 @@
+@import "../../sass/colors";
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $color-grey-light;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    &--instagram {
+        color: $color-instagram;
+    }
+
+    .remove {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}

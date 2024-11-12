@@ -1,0 +1,56 @@
+@import "../../sass/colors";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 6.4rem;
+
+    background-color: $color-grey-light;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    cursor: pointer;
+
+    .dropzone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        font-size: 1.8rem;
+        color: $color-grey;
+    }
+}
+
+.thumbsContainer {
+    display:  flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    margin-top: 1.6rem;
+
+    .thumb {
+        display: inline-flex;
+        border-radius: 2px;
+        border: 1px solid #eaeaea;
+        margin-bottom: 0.8rem;
+        margin-right: 0.8rem;
+        width: 10rem;
+        height: 10rem;
+        box-sizing: border-box;
+
+        .thumbInner {
+            display: flex;
+            min-width: 0;
+            overflow: hidden;
+
+            .image {
+                display: block;
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}

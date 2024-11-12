@@ -1,0 +1,1 @@
+export type SocialMedias = "instagram" | "twitter" | "linkedin" | "facebook";

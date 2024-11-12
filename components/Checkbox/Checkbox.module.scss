@@ -1,0 +1,39 @@
+@import "../../sass/colors";
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $color-primary;
+
+    label {
+      font-size: 1.4rem;
+      margin-top: -1px;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      margin: 0;
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 0.1rem solid $color-primary;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+
+      &::before {
+        content: "";
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.3rem;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        background-color: $color-primary;
+      }
+
+      &:checked::before {
+        transform: scale(1);
+      }
+    }
+  }
