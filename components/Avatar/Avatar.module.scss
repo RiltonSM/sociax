@@ -1,0 +1,40 @@
+@import '../../sass/colors';
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin: 2rem 0;
+
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 1.9rem;
+        background-color: $color-primary;
+        color: $color-white;
+
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        &__name {
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        &__email {
+            font-size: 1.4rem;
+            color: $color-grey;
+        }
+    }
+}

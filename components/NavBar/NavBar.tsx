@@ -15,7 +15,7 @@ export default function NavBar() {
                 <NavBarItem href="/publications" label="Publications" />
                 <NavBarItem href="/calendar" label="Calendar" />
                 <NavBarItem href="/configuration" label="Configuration" />
-                <NavBarItem href="/myAccount" label="My Account" />
+                <NavBarItem href="/account" label="My Account" />
             </ul>
         </nav>
     )

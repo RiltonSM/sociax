@@ -21,4 +21,10 @@
         color: $color-primary;
         border: 0.1rem solid $color-primary;
     }
+
+    &--gray {
+        border: 1px solid $color-grey;
+        color: $color-black;
+        background-color: transparent;
+    }
 }
