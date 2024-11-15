@@ -6,13 +6,7 @@ import TwitterIcon from '@/assets/icons/twitter'
 import LinkedinIcon from '@/assets/icons/linkedin'
 import FacebookIcon from '@/assets/icons/facebook'
 
-interface PostProps {
-    date: string
-    text: string
-    socials: string[]
-}
-
-export default function Post({ date, text, socials }: PostProps) {
+export default function Post({ date, text, socials }: Post) {
     return (
         <div className={styles.post}>
             <span className={styles.post__date}>{date}</span>
