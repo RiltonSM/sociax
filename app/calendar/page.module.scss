@@ -9,7 +9,6 @@
 
     @media (max-width: 768px) {
         flex-direction: column;
-        background-image: linear-gradient($color-white, $color-primary);
     }
 
     .title {
@@ -43,7 +42,7 @@
         text-decoration: none;
         cursor: pointer;
         
-        margin-top: 1rem;
+        margin: 1rem 0;
     }
 
     .schedule_posts {

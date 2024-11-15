@@ -19,4 +19,11 @@
     border-end-start-radius: 0;
 
     margin-top: -35%;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        height: 85%;
+
+        overflow-y: scroll;
+    }
 }

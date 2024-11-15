@@ -54,14 +54,16 @@ export default function Page() {
                     <div className={styles.socialMedias}>
                         <span className={styles.socialMedias__label}>Social media selected:</span>
 
-                        { socialMedias.includes("instagram") && <SocialMediaIconButton icon="instagram" onClick={handleRemoveSocialMedia}/> }
-                        { socialMedias.includes("twitter") && <SocialMediaIconButton icon="twitter" onClick={handleRemoveSocialMedia}/> }
-                        { socialMedias.includes("linkedin") && <SocialMediaIconButton icon="linkedin" onClick={handleRemoveSocialMedia}/> }
-                        { socialMedias.includes("facebook") && <SocialMediaIconButton icon="facebook" onClick={handleRemoveSocialMedia}/> }
+                        <div className={styles.socialMedias__buttons}>
+                            { socialMedias.includes("instagram") && <SocialMediaIconButton icon="instagram" onClick={handleRemoveSocialMedia}/> }
+                            { socialMedias.includes("twitter") && <SocialMediaIconButton icon="twitter" onClick={handleRemoveSocialMedia}/> }
+                            { socialMedias.includes("linkedin") && <SocialMediaIconButton icon="linkedin" onClick={handleRemoveSocialMedia}/> }
+                            { socialMedias.includes("facebook") && <SocialMediaIconButton icon="facebook" onClick={handleRemoveSocialMedia}/> }
 
-                        <button className={styles.add}>
-                            <PlusIcon />
-                        </button>
+                            <button className={styles.add}>
+                                <PlusIcon />
+                            </button>
+                        </div>
                     </div>
 
                     <form onSubmit={handleSubmit}>
