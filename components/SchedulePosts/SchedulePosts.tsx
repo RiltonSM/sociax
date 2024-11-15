@@ -1,6 +1,12 @@
+import Image from 'next/image';
+
 import { format } from 'date-fns'
 import Post from '../Post/Post';
 import DateSeparator from './DateSeparator/DateSeparator';
+
+import calendarImg from '@/assets/images/calendar.png'
+
+import styles from './SchedulePosts.module.scss'
 
 interface SchedulePostsProps {
     posts: Array<Post>
@@ -29,6 +35,16 @@ export default function SchedulePosts({ posts }: SchedulePostsProps) {
         })
 
         return componentsToRender
+    }
+
+    if (posts.length === 0) {
+        return (
+            <div className={styles.no_schedule_posts}>
+                <Image src={calendarImg} alt="Calendar" />
+                <h2 className={styles.no_schedule_posts__title}>No posts scheduled</h2>
+                <p className={styles.no_schedule_posts__description}>We couldn’t found any publications schedule, refresh or try again later.</p>
+            </div>
+        )
     }
 
     return (

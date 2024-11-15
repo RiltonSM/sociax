@@ -7,13 +7,7 @@ import FacebookIcon from '@/assets/icons/facebook'
 import styles from './DraftedPost.module.scss'
 import ChevronRightIcon from '@/assets/icons/chevron-right'
 
-interface DraftedPostProps {
-    date: string
-    text: string
-    socials: string[]
-}
-
-export default function DraftedPost({ date, text, socials }: DraftedPostProps) {
+export default function DraftedPost({ date, text, socials }: Post) {
     return (
         <div className={styles.draftedPost}>
             <span className={styles.draftedPost__date}>{date}</span>
