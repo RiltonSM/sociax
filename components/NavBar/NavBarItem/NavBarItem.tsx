@@ -13,10 +13,12 @@ interface NavBarItemProps {
 export default function NavBarItem({ href, label }: NavBarItemProps) {
     const pathname = usePathname();
     return (
-        <li className={pathname.startsWith(href) ? `${styles.navBarItem} ${styles.navBarItem}--active` : `${styles.navBarItem}`}>
-            <Link href={href}>{label}</Link>
+        <Link href={href} className={styles.navBarItemContainer}>
+            <li className={pathname.startsWith(href) ? `${styles.navBarItem} ${styles.navBarItem}--active` : `${styles.navBarItem}`}>
+                <span>{label}</span>
 
-            <div className={pathname.startsWith(href) ? `${styles.circle} ${styles.circle}--active` : `${styles.circle}`}/>
-        </li>
+                <div className={pathname.startsWith(href) ? `${styles.circle} ${styles.circle}--active` : `${styles.circle}`}/>
+            </li>
+        </Link>
     )
 }

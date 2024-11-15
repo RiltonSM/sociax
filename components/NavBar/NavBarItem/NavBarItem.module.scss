@@ -1,36 +1,39 @@
 @import "../../../sass/colors";
 
-.navBarItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navBarItemContainer {
+    text-decoration: none;
+    .navBarItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        list-style: none;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #FFFFFF;
+        padding: 1rem;
+        border-radius: 1rem;
     
-    list-style: none;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #FFFFFF;
-    padding: 1rem;
-    border-radius: 1rem;
-
-    &--active {
-        background-color: $color-black-light;
-        color: $color-primary;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .circle {
-        width: 0.9rem;
-        height: 0.9rem;
-        border-radius: 0.45rem;
-        background-color: $color-grey-dark;
-
         &--active {
-            background-color: $color-primary;
+            background-color: $color-black-light;
+            color: $color-primary;
         }
+    
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    
+        .circle {
+            width: 0.9rem;
+            height: 0.9rem;
+            border-radius: 0.45rem;
+            background-color: $color-grey-dark;
+    
+            &--active {
+                background-color: $color-primary;
+            }
+        }
+    
     }
-
 }
